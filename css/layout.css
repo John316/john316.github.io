@@ -228,6 +228,13 @@ fieldset[disabled] .btn-theme {
   margin-right: 10px;
 }
 
+.btn-theme.btn-transparent-bg {
+  color: #fff;
+  border-color: #fff;
+  border-width: 1px;
+  padding: 19px 40px
+}
+
 .btn-white-bg {
   color: #515769;
   background: #fff;
@@ -412,6 +419,29 @@ fieldset[disabled] .btn-theme {
 .promo-block .promo-block-text {
   font-size: 25px;
   color: #fff;
+}
+
+.content-block {
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+}
+
+#projects {
+  background: url(../img/1920x1080/02.png) no-repeat;
+}
+#showreel {
+  background: url(../img/1920x1080/03.png) no-repeat;
+}
+#process {
+  background: url(../img/1920x1080/04.png) no-repeat;
+}
+#team {
+  background: url(../img/1920x1080/05.png) no-repeat;
+}
+#contact {
+  background: url(../img/1920x1080/06.png) no-repeat;
 }
 
 /*------------------------------------------------------------------
