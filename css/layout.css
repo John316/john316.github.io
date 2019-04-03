@@ -19,10 +19,10 @@ body {
 }
 
 p {
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 400;
   font-family: 'Exo 2', sans-serif;
-  color: #a6a7aa;
+  color: #FFF;
   line-height: 1.4;
   margin-bottom: 15px;
 }
@@ -74,15 +74,16 @@ span {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Quicksand', sans-serif;
-  color: #515769;
+  color: #FFF;
   line-height: 1.4;
   margin: 0 0 15px;
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
-  color: #515769;
+  color: #FFF;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
@@ -103,12 +104,17 @@ h2 {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 27px;
 }
 
 h4 {
   font-size: 22px;
 }
+
+h6 {
+  font-size: 14px;
+}
+
 
 ::selection {
   color: #fff;
@@ -378,17 +384,17 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Promo Block]
 ------------------------------------------------------------------*/
-.promo-block {
-  position: relative;
-  z-index: 1;
+#home {
+  /* position: relative;
+  z-index: 1; */
   text-align: center;
   background: url(../img/1920x1080/01.png) no-repeat;
-  background-size: cover;
-  background-position: center center;
+  /* background-size: cover;
+  background-position: center center; */
   padding: 250px 0 200px;
 }
 
-.promo-block:before {
+/* .promo-block:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -397,7 +403,7 @@ fieldset[disabled] .btn-theme {
   z-index: -1;
   background: rgba(81, 87, 105, 0.4);
   content: " ";
-}
+} */
 
 .promo-block .promo-block-title {
   font-size: 70px;
@@ -424,9 +430,11 @@ fieldset[disabled] .btn-theme {
 .content-block {
   position: relative;
   z-index: 1;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
+  height: 1150px;
 }
+
 
 #projects {
   background: url(../img/1920x1080/02.png) no-repeat;
@@ -442,6 +450,43 @@ fieldset[disabled] .btn-theme {
 }
 #contact {
   background: url(../img/1920x1080/06.png) no-repeat;
+}
+
+.content-block .product-title{
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.content-block .page-title {
+  font-size: 27px;
+}
+
+.mail-label{
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.float-right{
+  float: right;
+}
+
+.mail-form textarea, .mail-form input {
+  width: 100%;
+  border: solid 1px #FFF;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 4px;
+}
+
+.btn-block a.btn-theme-md{
+  height: 40px;
+  padding: 10px 30px;
+  width: 150px;
+}
+.btn-block{
+  margin-top: 15px;
 }
 
 /*------------------------------------------------------------------
@@ -918,8 +963,7 @@ fieldset[disabled] .btn-theme {
 /* Page On Scroll */
 @media (min-width: 992px) {
   .page-on-scroll .header .navbar {
-    background: #fff;
-    border-bottom-color: #f0f0f0;
+    /* background: rgba(255, 255, 255, 0.2); */
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -937,7 +981,7 @@ fieldset[disabled] .btn-theme {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
   .page-on-scroll .header .nav-item-child {
-    color: #515769;
+    /* color: #515769; */
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -1254,7 +1298,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .content-lg {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 100px;
 }
 
