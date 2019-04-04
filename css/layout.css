@@ -389,8 +389,8 @@ fieldset[disabled] .btn-theme {
   z-index: 1; */
   text-align: center;
   background: url(../img/1920x1080/01.png) no-repeat;
-  /* background-size: cover;
-  background-position: center center; */
+  background-size: cover;
+  background-position: center center;
   padding: 250px 0 200px;
 }
 
@@ -438,18 +438,23 @@ fieldset[disabled] .btn-theme {
 
 #projects {
   background: url(../img/1920x1080/02.png) no-repeat;
+  background-size: cover;
 }
 #showreel {
   background: url(../img/1920x1080/03.png) no-repeat;
+  background-size: cover;
 }
 #process {
   background: url(../img/1920x1080/04.png) no-repeat;
+  background-size: cover;
 }
 #team {
   background: url(../img/1920x1080/05.png) no-repeat;
+  background-size: cover;
 }
 #contact {
   background: url(../img/1920x1080/06.png) no-repeat;
+  background-size: cover;
 }
 
 .content-block .product-title{
